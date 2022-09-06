@@ -1,0 +1,11 @@
+<h1 style="text-align: center; text-decoration: underline;">DRINKS</h1>
+<br>
+
+<div style="margin-top: 10px; margin-bottom: 5px; " *ngFor="let i of obj; index as j" class="card">
+    
+    <img [src]="i.img" alt="Avatar" style="width:100%">
+    <div  class="container">
+      <h3 style="text-align: center;"><b>{{i.name}}({{i.cpp | currency:'INR'}}-per plate)</b></h3> 
+      <div style="text-align: center;"><span>Quantity: <input [(ngModel)]= "i.quantity" style="text-align: center;" type="number"><button (click)="add(j)" style="color: black; background-color: greenyellow;">+</button><button (click)="Minus(j)" style="color: white; background-color: red;" [disabled]="i.quantity < 1">-</button></span> </div>
+    </div>
+</div>

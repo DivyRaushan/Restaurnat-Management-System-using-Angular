@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #241616
+  }
+
+li{
+     display: inline;
+     margin: 20px;
+  }
+
+  li a{
+    color: aliceblue;
+  }
+
+.h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+  background-color: rgb(228, 81, 105) ;
+}

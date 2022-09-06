@@ -1,0 +1,38 @@
+<h1 style="text-align: center;">----Bill----</h1>
+
+<table  style="width: 100%; text-align: center;">
+<tr>  
+   <td>Name</td>
+   <td>Quantity</td>
+   <td>Cpp</td>
+   <td>Total Cost</td>
+</tr>
+
+<tr *ngFor = "let i of data.getTotalData(); index as j" >
+<ng-container *ngIf = "i.quantity>0">
+   <td>{{i.name}}</td>
+   <td>{{i.quantity}}</td>
+   <td>{{i.cpp}}</td>
+   <td>{{i.totalcost}}</td>
+</ng-container>
+</tr>
+</table> 
+
+<div *ngIf = "data.getTotalData().length>0" style="float:right;">
+<p>---------------------------------------</p>
+
+<p>Discount: {{discount}}%</p>
+
+<p>---------------------------------------</p>
+
+<p>Tax: {{data.getTotalCost()/10 | currency:'INR'}}</p>
+
+<p>---------------------------------------</p>
+
+<b>GRAND TOTAL: {{data.getTotalCost() + data.getTotalCost()/10 - data.getTotalCost() *0.05 | currency:'INR'}}</b>
+
+</div>
+
+
+
+
