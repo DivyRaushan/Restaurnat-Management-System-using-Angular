@@ -1,3 +1,13 @@
+It is an angular based web application through which user can order different
+food stuffs from different menu based on their choices.
+• Users can track what items they have ordered and the bill for the same will
+be generated live.
+• FRAMEWORK USED - ANGULAR
+• MAJOR CONCEPT USED - ANGULAR SERVICES, ROUTING, DIRECTIVES,
+PIPES, etc.
+• DEVELOPMENT PLATFORM USED - VISUAL STUDIO CODE
+
+
 # RestaurantManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
